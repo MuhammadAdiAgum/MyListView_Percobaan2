@@ -38,10 +38,10 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Toast.makeText(MainActivity.this,
                 heroes.get(i).getName(), Toast.LENGTH_SHORT).show();
-                }
+            }
         });
-
     }
+
     private void addItem() {
         heroes = new ArrayList<>();
             for (int i = 0; i < dataName.length; i++) {
@@ -62,5 +62,4 @@ public class MainActivity extends AppCompatActivity {
       dataPhoto =
                 getResources().obtainTypedArray(R.array.data_photo);
          }
-
 }
